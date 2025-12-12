@@ -68,29 +68,6 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
 </head>
 <body>
-    <script>
-        // Function to hide the loader and show the main content
-        function hideLoader() {
-            const loader = document.querySelector('.as_loader');
-            const mainContent = document.querySelector('.as_main_wrapper');
-
-            // Hide the loader with a fade-out effect
-            loader.style.opacity = '0';
-            setTimeout(() => {
-                loader.style.visibility = 'hidden';
-                // Show the main content with a fade-in effect
-                mainContent.style.opacity = '1';
-                mainContent.style.visibility = 'visible';
-            }, 500); // Wait for 500ms for the fade-out transition
-        }
-
-        // Wait for 10000 milliseconds (10 seconds) then call hideLoader
-        // Note: This delay is **forced** regardless of whether the site is fully loaded.
-        const forcedDelay = 10000; // 10 seconds
-
-        // Using setTimeout to force the 10-second delay
-        setTimeout(hideLoader, forcedDelay);
-    </script>
     <div class="as_loader">
         <img src="IMAGES/loader.png" alt="" class="img-responsive" style="height: 400px; width: 600px;">
     </div> 
